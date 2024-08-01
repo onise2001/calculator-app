@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Calculator</title>
+  </head>
+  <body class="">
+    <main>
+      <div class="main-header">
+        <p class="title">calc</p>
+        <div class="toggle-wrapper">
+          <p class="theme-numbers">
+            <span>1</span><span>2</span><span>3</span>
+          </p>
+          <div class="toggle-div">
+            <p class="theme-title">THEME</p>
+            <div class="toggle-switch">
+              <input
+                type="range"
+                id="toggle-input"
+                name="toggle"
+                class="toggle-input"
+                min="1"
+                max="3"
+                value="1"
+                step="1"
+              />
+
+              <div class="toggle-slider default" id="toggle-track"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input
+        type="text"
+        name="calc-input"
+        readonly
+        id="calc-input"
+        placeholder="0"
+      />
+      <p class="input-error hide">Check your expression</p>
+      <div class="numbers">
+        <div class="row">
+          <button class="number-button">7</button>
+          <button class="number-button">8</button>
+          <button class="number-button">9</button>
+          <button class="symbol-button delete">DEL</button>
+        </div>
+        <div class="row">
+          <button class="number-button">4</button>
+          <button class="number-button">5</button>
+          <button class="number-button">6</button>
+          <button class="symbol-button">+</button>
+        </div>
+        <div class="row">
+          <button class="number-button">1</button>
+          <button class="number-button">2</button>
+          <button class="number-button">3</button>
+          <button class="symbol-button">-</button>
+        </div>
+        <div class="row">
+          <button class="symbol-button">.</button>
+          <button class="number-button">0</button>
+          <button class="symbol-button">/</button>
+          <button class="symbol-button">x</button>
+        </div>
+        <div class="row">
+          <button class="symbol-button reset">RESET</button>
+          <button class="symbol-button equal">=</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
